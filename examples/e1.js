@@ -1,5 +1,6 @@
-const rpc = require('../core/remoteProtocolController');
-
+const rpc = require('../core/core.js');
+const jayson = require('jayson');
+const core = require('biot-core');
 
 function exampleData(id) {
     return [id, 'Hello, World!'];
@@ -7,12 +8,18 @@ function exampleData(id) {
 
 
 async function Start() {
-    let map = rpc.contract([exampleData]);
-    let service = rpc.openService(map, {host: '127.0.0.1', port: 4303});
+    await core.init('test');
 
-    let remote = await rpc.connect();
+    let server = rpc.createServer([exampleData, core.getMyDeviceWallets]);
+    server.http().listen(4303);
+    let client = jayson.client.http({ port: 4303 });
 
-    console.log(await remote.exampleData(123));
+    client.request('getMyDeviceWallets', [], function (err, response) {
+        if (err)
+            throw new Error(err);
+
+        console.error(response.result);
+    });
 
     return 'Ok';
 }
