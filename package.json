@@ -9,6 +9,5 @@
   "author": "ivan remmelgas",
   "license": "ISC",
   "dependencies": {
-    "biot-core": "0.0.13"
   }
 }
