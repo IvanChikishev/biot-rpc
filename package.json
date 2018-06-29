@@ -1,0 +1,14 @@
+{
+  "name": "biot-rpc",
+  "version": "1.0.0",
+  "description": "rpc networking for biot-core",
+  "main": "core/remoteProtocolController.js",
+  "scripts": {
+    "test": "node examples/e1.js"
+  },
+  "author": "ivan remmelgas",
+  "license": "ISC",
+  "dependencies": {
+    "biot-core": "0.0.13"
+  }
+}
