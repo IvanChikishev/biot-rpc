@@ -1,51 +1,28 @@
 # biot-rpc
 
+
 ### The library for initializing the rpc connection, in conjunction with [biot-core](https://github.com/BIoTws/biot-core), is used for remote invocation of async / await functions.
 </br></br>
 
 ## How to install
+</br>
 
-#### npm
+#### downloads project files
 ```
-> npm --save -i https://github.com/remmelgas/biot-rpc.git
+> git clone https://github.com/remmelgas/biot-rpc
 ```
-#### yarn
+
+#### install dependencies
 ```
-> yarn add https://github.com/remmelgas/biot-rpc.git
+> npm install
+```
+
+#### run server
+```
+> node server
 ```
 </br>
 
-## Example server
-
-
-```javascript
-const core = require('biot-core');
-const net = require('biot-rpc');
-
-/**
-/* Permissions for remote access to functions array
-**/
-
-const allocEvents = [
-    core.getMyDeviceWallets,
-    core.getWallets
-];
-
-async Start() => {
-    //initialize biot-core in test mode
-    await core.init('test');
-
-    //create a listener server
-    let stream = net.createServer();
-    stream.http().listen(4303);
-
-
-    return 'Ok';
-};
-
-Start().then(console.log).error(console.error);
-```
-</br>
 
 ## Example client
 
@@ -73,4 +50,10 @@ stream.request('getMyDeviceWallets', function(err, state) {
 
     console.log(state.result);
 });
+```
+</br>
+
+#### terminal
+```
+> node example1
 ```

@@ -2,13 +2,12 @@
   "name": "biot-rpc",
   "version": "1.0.0",
   "description": "rpc networking for biot-core",
-  "main": "core/core.js",
-  "scripts": {
-    "test": "node examples/e1.js"
-  },
+  "main": "server.js",
+  "scripts": {},
   "author": "ivan remmelgas",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "jayson": "~2.0.6"
+    "jayson": "2.0.6",
+    "biot-core": "git+https://github.com/BIoTws/biot-core.git"
   }
 }
