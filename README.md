@@ -1,6 +1,6 @@
 # biot-rpc
 
-## The library for initializing the rpc connection, in conjunction with [biot-core](https://github.com/BIoTws/biot-core), is used for remote invocation of async / await functions.
+### The library for initializing the rpc connection, in conjunction with [biot-core](https://github.com/BIoTws/biot-core), is used for remote invocation of async / await functions.
 </br></br>
 
 ## How to install
