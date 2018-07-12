@@ -9,9 +9,9 @@
 ```
 > npm --save -i https://github.com/remmelgas/biot-rpc.git
 ```
-#### yarp
+#### yarn
 ```
-> npm --save -i yarp add https://github.com/remmelgas/biot-rpc.git
+> yarn add https://github.com/remmelgas/biot-rpc.git
 ```
 </br>
 
