@@ -51,8 +51,6 @@ stream.request('getMyDeviceWallets', function(err, state) {
     console.log(state.result);
 });
 ```
-</br>
-
 #### terminal
 ```
 > node example1
