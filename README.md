@@ -15,6 +15,7 @@
 #### install dependencies
 ```
 > npm install
+> ./testnetify.sh
 ```
 
 #### run server
