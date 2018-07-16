@@ -1,7 +1,9 @@
-const jayson = require('jayson');
+const {
+    server
+} = require('jayson');
 
 
-const createServer = (state) => {
+exports.createServer = (state) => {
     let temporaryState = [];
     for(let stateIndex in state) {
         let stateData = state[stateIndex];
@@ -11,7 +13,5 @@ const createServer = (state) => {
         }
     }
 
-    return new jayson.server(temporaryState);
+    return new server(temporaryState);
 };
-
-module.exports.createServer = createServer;

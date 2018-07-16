@@ -7,7 +7,11 @@
   "author": "Ivan Remmelgas",
   "license": "MIT",
   "dependencies": {
+    "biot-core": "git+https://github.com/BIoTws/biot-core.git",
+    "body-parser": "^1.18.3",
+    "connect": "^3.6.6",
+    "cors": "^2.8.4",
     "jayson": "2.0.6",
-    "biot-core": "git+https://github.com/BIoTws/biot-core.git"
+    "koa": "^2.5.2"
   }
 }

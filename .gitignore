@@ -113,3 +113,14 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+*.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+conf.jse
+package-lock.json
+plugins/auth.js
+plugins/auth.js
+yarn.lock
+plugins/auth.js
+package-lock.json
